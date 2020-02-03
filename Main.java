@@ -1,9 +1,10 @@
 package com.company;
+import java.io.IOException;
 
-
-//Hoja de trabajo 3
-//Daniela Batz
-/*Jose Ramos
+/*Hoja de trabajo 3
+Archivo main
+Daniela Batz
+Jose Ramos
 Algoritmos y estructuras de datos
 Calculadora*/
 
