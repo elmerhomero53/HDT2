@@ -17,5 +17,30 @@ public class Calculadora {
 
     public Calculadora(){
     }
+
+    public void calculateFile(String fileName) throws IOException {
+        BufferedReader br = null;
+        StringBuilder sb = null;
+        try {
+            FileReader fileReader = new FileReader(fileName);
+            br = new BufferedReader(fileReader);
+
+            sb = new StringBuilder();
+            String line = br.readLine();
+
+            while (line != null) {
+                sb.append(line);
+                line = br.readLine();
+            }
+
+            String input = sb.toString();
+            System.out.println(input + " = " + calculate(input));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            br.close();
+        }
+    }
+    
 }
 
