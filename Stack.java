@@ -17,4 +17,4 @@ public abstract class Stack <T>{
 		 vector.remove(vector.size()-1);
 		 return lastValue;
 	 }
-    }
+}
