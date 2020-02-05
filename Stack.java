@@ -1,13 +1,20 @@
-package com.company;
-import java.util.Scanner;
-import java.util.ArrayList;
+/* 
+ * Daniela Batz 19214
+ * Jose Ramos 
+ */
 
-public class Stack {
-    private int size;
-    private Node<T> head;
+import java.util.Vector;
 
-    public Stack(){
-        size=0;
-        head = null;
+public abstract class Stack <T>{
+	private Vector<T> vector = new Vector<T>();
+	
+	public void push(T element) { //apila cada uno de los elemntos
+		 vector.add(element);
+	}
+	   
+	 public T pop() {
+		 T lastValue = vector.lastElement(); //retira el elemento que esta encima
+		 vector.remove(vector.size()-1);
+		 return lastValue;
+	 }
     }
-}
